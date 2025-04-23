@@ -4,7 +4,7 @@ def read_and_modify_file():
     try:
         with open(filename, 'r') as file:
             content = file.read()
-            print("\nOriginal file content successfully read. 🧠\n")
+            print("\nOriginal file content successfully read. \n")
 
             # Modify the content - let's get a little fancy
             modified_content = content.upper()  # We'll turn everything into CAPITAL LETTERS for drama
@@ -24,7 +24,7 @@ def read_and_modify_file():
     try:
         with open(new_filename, 'w') as new_file:
             new_file.write(modified_content)
-            print(f"\n✅ Modified content successfully written to '{new_filename}'. Go check it out!")
+            print(f"\n Modified content successfully written to '{new_filename}'. Go check it out!")
     except Exception as e:
         print(f"\n🚨 Failed to write the modified file: {e}")
 
